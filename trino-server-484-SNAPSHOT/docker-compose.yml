@@ -1,0 +1,17 @@
+volumes:
+  data:
+
+services:
+  trino-coordinator:
+    image: "trino:484-SNAPSHOT-amd64"
+    hostname: trino-coordinator
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./etc:/etc/trino
+    networks:
+      - trino-network
+
+networks:
+  trino-network:
+    driver: bridge
