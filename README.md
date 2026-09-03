@@ -104,13 +104,13 @@ ___
 
 ## Historical:
 
-### What has been done for version 484:
+### What was done for version 484:
 
 The juda 484 project required over six months of work and the addition of nearly 30,000 lines of code to Trino to make it easier to use.  
 Most of this work is visible through the various [PRs added to the Trino repository][22].
 
 [1]: <https://prrvchr.github.io/juda/README_fr>
-[2]: <https://prrvchr.github.io/juda#what-has-been-done-for-version-484>
+[2]: <https://prrvchr.github.io/juda#what-was-done-for-version-484>
 [3]: <https://github.com/trinodb/trino>
 [4]: <https://prrvchr.github.io/>
 [5]: <https://github.com/trinodb/trino/pull/30506>
