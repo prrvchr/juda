@@ -52,15 +52,19 @@ Thanks to these modifications, the **juda** server is a **Trino** server that su
   - Table name.
   - Indication of whether the column is auto-incrementing.
   - Indication of whether the column is read-only.
+- 3 additional connectors:
+  - [HyperSQL][11].
+  - [Firebird][12].
+  - [SQLite][13].
 
-Freed from these limitations and combined with [LibreOffice Base][11] and [jdbcDriverOOo][12], it allows queries to be executed on tables from different databases.  
+Freed from these limitations and combined with [LibreOffice Base][14] and [jdbcDriverOOo][15], it allows queries to be executed on tables from different databases.  
 It is even possible to edit these tables within the data grids displayed in Base.
 
 Being free software I encourage you:
 - To duplicate its [source code][10].
 - To make changes, corrections, improvements.
-- To open [issue][13] if needed.
-- To [participate in the costs][14] of [CASA certification][15].
+- To open [issue][16] if needed.
+- To [participate in the costs][17] of [CASA certification][18].
 
 In short, to participate in the development of this extension.  
 Because it is together that we can make Free Software smarter.
@@ -71,16 +75,16 @@ ___
 
 The juda server is written in Java.  
 Its use requires the installation of a **Java JRE or JDK version 25 or later**.  
-I recommend [Adoptium][16] as your Java installation source.
+I recommend [Adoptium][19] as your Java installation source.
 
-The juda server is an application containerized with [Docker][17].  
+The juda server is an application containerized with [Docker][20].  
 It is therefore necessary for Docker to be already installed.
 
 ___
 
 ## Installation:
 
-- ![juda logo][18] Download the file **[trino-server-484-SNAPSHOT][19]** [![Version][20]][19]
+- ![juda logo][21] Download the file **[trino-server-484-SNAPSHOT][22]** [![Version][23]][22]
 
 Then, extract this file into a directory of your choice.  
 Finally, copy the contents of the `trino-server-484-SNAPSHOT` folder from the repository to the corresponding folder in the chosen directory.
@@ -97,7 +101,7 @@ Example `.properties` files are provided in the repository's root folder.
 
 These files are configured with the default settings specific to each database.  
 However, if you wish to use the SQLite connector, you must modify the `connection-url` parameter to point to your file or at least an existing folder.  
-For the other connectors, the [dockerDB][21] repository allows you to set up a database very quickly, with no dependencies other than Docker.
+For the other connectors, the [dockerDB][24] repository allows you to set up a database very quickly, with no dependencies other than Docker.
 
 To control the server, you need to navigate to the `trino-server-484-SNAPSHOT/bin` directory and enter the following commands:
 - Start the server: `./launcher run`
@@ -116,7 +120,7 @@ ___
 ### What was done for version 484:
 
 The juda 484 project required over six months of work and the addition of nearly 30,000 lines of code to Trino to make it easier to use.  
-Most of this work is visible through the various [PRs added to the Trino repository][22].
+Most of this work is visible through the various [PRs added to the Trino repository][25].
 
 [1]: <https://prrvchr.github.io/juda/README_fr>
 [2]: <https://prrvchr.github.io/juda#what-was-done-for-version-484>
@@ -128,15 +132,18 @@ Most of this work is visible through the various [PRs added to the Trino reposit
 [8]: <https://github.com/trinodb/trino/pull/27321>
 [9]: <https://github.com/trinodb/trino/pull/29845>
 [10]: <https://github.com/trinodb/trino/pull/30916>
-[11]: <https://www.libreoffice.org/download/>
-[12]: <https://prrvchr.github.io/jdbcDriverOOo/>
-[13]: <https://github.com/prrvchr/juda/issues/new>
-[14]: <https://github.com/sponsors/prrvchr>
-[15]: <https://appdefensealliance.dev/casa>
-[16]: <https://adoptium.net/temurin/releases?version=25&os=any&arch=any>
-[17]: <https://www.docker.com/>
-[18]: <img/juda-icon.svg#middle>
-[19]: <https://github.com/prrvchr/juda/releases/download/484/trino-server-484-SNAPSHOT.tar.gz>
-[20]: <https://img.shields.io/github/downloads/prrvchr/juda/latest/total?label=484#right>
-[21]: <https://prrvchr.github.io/dockerDB/>
-[22]: <https://github.com/trinodb/trino/issues?q=is%3Aopen%20is%3Apr%20author%3Aprrvchr>
+[11]: <https://hsqldb.org/>
+[12]: <https://www.firebirdsql.org/>
+[13]: <https://www.sqlite.org/>
+[14]: <https://www.libreoffice.org/download/>
+[15]: <https://prrvchr.github.io/jdbcDriverOOo/>
+[16]: <https://github.com/prrvchr/juda/issues/new>
+[17]: <https://github.com/sponsors/prrvchr>
+[18]: <https://appdefensealliance.dev/casa>
+[19]: <https://adoptium.net/temurin/releases?version=25&os=any&arch=any>
+[20]: <https://www.docker.com/>
+[21]: <img/juda-icon.svg#middle>
+[22]: <https://github.com/prrvchr/juda/releases/download/484/trino-server-484-SNAPSHOT.tar.gz>
+[23]: <https://img.shields.io/github/downloads/prrvchr/juda/latest/total?label=484#right>
+[24]: <https://prrvchr.github.io/dockerDB/>
+[25]: <https://github.com/trinodb/trino/issues?q=is%3Aopen%20is%3Apr%20author%3Aprrvchr>
