@@ -44,7 +44,16 @@ juda is the merger of the following PRs:
 
 Its source code is consolidated in the PR [juda][10] (Java Unified Database Access).
 
-Combined with [LibreOffice Base][11] and [jdbcDriverOOo][12], it allows you to execute queries on tables from different databases.
+Thanks to these modifications, the **juda** server is a **Trino** server that supports:
+- Case-sensitive identifiers.
+- ResultSets providing the following metadata:
+  - Catalog name.
+  - Schema name.
+  - Table name.
+  - Indication of whether the column is auto-incrementing.
+  - Indication of whether the column is read-only.
+
+Freed from these limitations and combined with [LibreOffice Base][11] and [jdbcDriverOOo][12], it allows queries to be executed on tables from different databases.  
 It is even possible to edit these tables within the data grids displayed in Base.
 
 Being free software I encourage you:

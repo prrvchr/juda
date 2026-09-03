@@ -44,7 +44,16 @@ juda est le résultat de la fusion des pull requests suivantes :
 
 Son code source est rassemblé dans le PR [juda][10] (Java Unified Database Access).
 
-Associé à [LibreOffice Base][11] et [jdbcDriverOOo][12], il permet d'exécuter des requêtes sur des tables provenant de différentes bases de données.
+Grâce à ces modifications, le serveur **juda** est un serveur **Trino** qui prend en charge:
+- Des identifiants sensibles à la casse.
+- Des ensembles de résultats (ResultSets) fournissant les métadonnées suivantes:
+  - Nom du catalogue.
+  - Nom du schéma.
+  - Nom de la table.
+  - Indication si la colonne est en auto-incrémentation.
+  - Indication si la colonne est en lecture seule.
+
+Libéré de ces limitations et combiné à [LibreOffice Base][11] et [jdbcDriverOOo][12], il permet d'exécuter des requêtes sur des tables issues de différentes bases de données.  
 Il est même possible de modifier ces tables au sein des grilles de données affichées dans Base.
 
 Etant un logiciel libre je vous encourage:
